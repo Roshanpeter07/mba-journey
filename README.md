@@ -1,32 +1,11 @@
 # mba-journey
 
-A modular, static memory-book scaffold for an MBA journey. It uses semantic HTML, vanilla ES modules and plain CSS, with no build step or third-party runtime dependencies.
-
-The site is intentionally a framework: names, photographs, routes, milestones and conversation excerpts have not been added. Populate it only with verified material that the people involved have agreed to share. Keep private WhatsApp exports, credentials and unlicensed music out of this repository.
-
-## Project structure
-
-```text
-.
-├── .github/workflows/deploy.yml
-├── public/
-│   ├── audio/
-│   ├── fonts/
-│   ├── icons/
-│   └── images/
-├── src/
-│   ├── data/                 # Empty, documented content collections
-│   ├── scripts/              # Page behavior and small components
-│   └── styles/               # Design foundations and component styles
-├── index.html
-├── .editorconfig
-└── .gitignore
-```
+A modular, static memory book for an MBA journey. Chapter 1 now opens with two exact messages from 17 September 2024, followed by the approved title and five friends' names. It uses semantic HTML, vanilla ES modules and plain CSS, with no build step or third-party runtime dependencies.
 
 ## Preview locally
 
-1. Open this folder in VS Code.
-2. In Terminal, go to the repository folder and start a local static server:
+1. Open this repository folder in VS Code.
+2. In Terminal, start a static server from the repository root:
 
    ```sh
    python3 -m http.server 8000
@@ -35,15 +14,24 @@ The site is intentionally a framework: names, photographs, routes, milestones an
 3. Visit [http://localhost:8000](http://localhost:8000).
 4. Stop the server with `Control-C` when you are finished.
 
-Serving over HTTP lets the browser load the JavaScript modules correctly. No package installation is required.
+The site uses JavaScript modules, so preview it over HTTP rather than opening `index.html` directly. No package installation is needed.
 
-## Add content carefully
+## Chapter 1 content
 
-- `src/data/friends.js`, `chapters.js`, `milestones.js`, `conversations.js` and `routes.js` are empty on purpose; each describes the shape for future verified entries.
-- Avoid adding raw chat exports. Add only a short, checked excerpt when the speaker has agreed to its use, and remove details that would expose private information.
-- Add photographs only after getting consent from identifiable people. Keep originals and backups somewhere private.
+- `src/data/chapters.js` holds the approved chapter title and date.
+- `src/data/conversations.js` holds only the two approved opening messages, with their exact times.
+- `src/data/friends.js` holds the five approved names: Roshan, Naveen, Shailesh, Rithvik and Rishiram.
+- `src/scripts/components/chapter-one.js` renders those data modules into the page.
+- `src/styles/components/chapter-one.css` contains the opening and chapter presentation.
+
+The private WhatsApp export is not copied into this repository. Group creation details and any further application, essay or deadline messages remain out of the page until their exact wording and dates are checked against the original export. The page includes a neutral placeholder for that material. No personal photographs or descriptions are included.
+
+## Content and privacy
+
+- Keep private WhatsApp exports, credentials and unlicensed music outside this repository.
+- Add only accurate excerpts that have been approved for the site, with any needed redactions.
+- Add photographs only after getting consent from identifiable people.
 - Add audio only when you have the rights to use it. The player stays disabled until an audio source is deliberately configured.
-- Use `public/images/`, `public/fonts/`, `public/audio/` and `public/icons/` for reviewed assets. The folders contain notes or a small site icon, not personal material.
 
 ## GitHub Pages deployment
 
@@ -52,6 +40,6 @@ The workflow in `.github/workflows/deploy.yml` prepares the static files and dep
 1. In the repository on GitHub, open **Settings → Pages**.
 2. Set **Build and deployment → Source** to **GitHub Actions**.
 3. Review the repository visibility and who should be able to view the site before enabling Pages. GitHub Pages access for private repositories depends on the account or organization plan. See [GitHub's Pages publishing-source guide](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
-4. After reviewing and committing the scaffold, push to `main` to start deployment. No changes have been pushed by this setup.
+4. Commit and review the changes before pushing to `main` to start deployment. No changes have been pushed or published as part of this work.
 
 The workflow needs the `pages: write` and `id-token: write` permissions required by GitHub Pages deployments. Its output is the repository's Pages site URL, shown in the Actions run and the Pages settings.

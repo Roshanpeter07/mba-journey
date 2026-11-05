@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor and local environment files
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+
+# Dependencies and generated output
+node_modules/
+_site/
+dist/
+coverage/
+
+# Local logs and operating-system files
+*.log
+Thumbs.db

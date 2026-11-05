@@ -1,0 +1,5 @@
+.chat-placeholder { position: relative; max-width: 34rem; padding: 1.5rem; border: 1px solid var(--color-line); background: rgba(255,255,255,0.32); }
+.chat-placeholder::before { position: absolute; top: -0.35rem; left: 1.5rem; width: 0.65rem; height: 0.65rem; border-top: 1px solid var(--color-line); border-left: 1px solid var(--color-line); background: var(--color-paper-soft); content: ""; transform: rotate(45deg); }
+.chat-placeholder__label { display: block; margin-bottom: 1.2rem; font-size: 0.6rem; }
+.chat-placeholder > p { color: var(--color-ink-soft); font-family: var(--font-display); font-size: 1.25rem; }
+.chat-placeholder__note { display: block; margin-top: 1rem; font-size: 0.58rem; }

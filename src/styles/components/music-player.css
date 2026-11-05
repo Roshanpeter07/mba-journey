@@ -1,0 +1,4 @@
+.audio-toggle { display: inline-flex; align-items: center; gap: 0.65rem; min-height: 2.75rem; padding: 0.65rem 1rem; border: 1px solid var(--color-line); border-radius: 999px; background: transparent; color: var(--color-ink-soft); font-size: 0.78rem; }
+.audio-toggle:not(:disabled) { cursor: pointer; }
+.audio-toggle:disabled { opacity: 0.66; }
+.audio-control__note { color: var(--color-muted); font-size: 0.72rem; }

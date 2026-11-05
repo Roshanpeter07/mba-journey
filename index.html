@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f0e8">
+    <meta name="description" content="An evolving digital memory book scaffold. Personal memories have not been added yet.">
+    <title>MBA Journey — Memory Book</title>
+    <link rel="icon" href="./public/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./src/styles/tokens.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/typography.css">
+    <link rel="stylesheet" href="./src/styles/layout.css">
+    <link rel="stylesheet" href="./src/styles/animations.css">
+    <link rel="stylesheet" href="./src/styles/components/navigation.css">
+    <link rel="stylesheet" href="./src/styles/components/chat.css">
+    <link rel="stylesheet" href="./src/styles/components/map.css">
+    <link rel="stylesheet" href="./src/styles/components/progress.css">
+    <link rel="stylesheet" href="./src/styles/components/music-player.css">
+    <script type="module" src="./src/scripts/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="reading-progress" role="progressbar" aria-label="Page reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <span class="reading-progress__bar" aria-hidden="true"></span>
+    </div>
+
+    <header class="site-header page-wrap">
+      <a class="wordmark" href="#top" aria-label="MBA Journey Memory Book, home">
+        <span class="wordmark__mark" aria-hidden="true">M</span>
+        <span class="wordmark__text">MBA Journey <span>Memory book</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#story">The story</a>
+        <a href="#people">People</a>
+        <a href="#places">Places</a>
+        <a href="#messages">Messages</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero page-wrap" id="top" aria-labelledby="hero-title">
+        <div class="hero__copy" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span> A memory book in progress</p>
+          <h1 id="hero-title">A journey<br><em>worth remembering.</em></h1>
+          <p class="hero__intro">A quiet home for the people, places and moments of this MBA journey. The framework is here; personal memories will be added with care.</p>
+          <a class="text-link" href="#story">Explore the framework <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero__aside" aria-label="Project note" data-reveal>
+          <span class="hero__aside-index" aria-hidden="true">01</span>
+          <p>Every good story begins with a blank page.</p>
+          <span class="hero__aside-caption">A place for what matters</span>
+        </div>
+        <div class="hero__bottomline" aria-hidden="true"><span>PERSONAL ARCHIVE</span><span>MADE TO GROW WITH THE STORY</span></div>
+      </section>
+
+      <section class="editorial-section page-wrap" id="story" aria-labelledby="story-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">01 <span class="eyebrow__rule" aria-hidden="true"></span> The story</p>
+          <h2 id="story-title">The chapters<br><em>are waiting.</em></h2>
+        </div>
+        <div class="section-body" data-reveal>
+          <p class="section-lede">This space is ready for the moments that made the journey yours.</p>
+          <article class="empty-state" data-progress-placeholder>
+            <span class="empty-state__symbol" aria-hidden="true">✳</span>
+            <h3>Your first memory goes here.</h3>
+            <p>No chapters have been added. When you are ready, start with a moment you can verify and have permission to share.</p>
+            <p class="content-status" data-chapter-count>Chapter content: not added</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="editorial-section editorial-section--soft page-wrap" id="people" aria-labelledby="people-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">02 <span class="eyebrow__rule" aria-hidden="true"></span> People</p>
+          <h2 id="people-title">The people<br><em>along the way.</em></h2>
+        </div>
+        <div class="section-body" data-reveal>
+          <p class="section-lede">Names and stories belong here only with each person's agreement.</p>
+          <div class="empty-state empty-state--compact" data-people-placeholder>
+            <h3>People will be added later.</h3>
+            <p>No names, photographs or personal details are included in this scaffold.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="editorial-section page-wrap" id="places" aria-labelledby="places-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">03 <span class="eyebrow__rule" aria-hidden="true"></span> Places</p>
+          <h2 id="places-title">A map of<br><em>the miles between.</em></h2>
+        </div>
+        <div class="section-body" data-reveal>
+          <p class="section-lede">Locations and routes will appear after they are confirmed.</p>
+          <div class="map-placeholder" data-route-placeholder role="img" aria-label="Map placeholder; no verified routes have been added">
+            <span class="map-placeholder__grid" aria-hidden="true"></span>
+            <span class="map-placeholder__pin" aria-hidden="true">＋</span>
+            <p>Route map placeholder</p>
+            <span class="map-placeholder__note">No locations or routes added</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="editorial-section editorial-section--soft page-wrap" id="messages" aria-labelledby="messages-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">04 <span class="eyebrow__rule" aria-hidden="true"></span> Messages</p>
+          <h2 id="messages-title">A few words<br><em>that stayed.</em></h2>
+        </div>
+        <div class="section-body" data-reveal>
+          <p class="section-lede">Only accurate excerpts shared with the speakers' permission will be included.</p>
+          <div class="chat-placeholder" data-chat-placeholder aria-live="polite">
+            <span class="chat-placeholder__label">Conversation archive</span>
+            <p>No conversation excerpts have been added.</p>
+            <span class="chat-placeholder__note">Private exports stay outside this repository.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-note page-wrap" aria-labelledby="closing-title" data-reveal>
+        <p class="eyebrow">A note for later</p>
+        <h2 id="closing-title">Built for the memories<br><em>you choose to keep.</em></h2>
+        <div class="audio-control">
+          <audio id="memory-audio" preload="none"></audio>
+          <button class="audio-toggle" type="button" data-audio-toggle aria-pressed="false" disabled>
+            <span aria-hidden="true">♪</span> Audio not added
+          </button>
+          <span class="audio-control__note">A licensed track can be connected later.</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer page-wrap">
+      <a class="wordmark wordmark--footer" href="#top"><span class="wordmark__mark" aria-hidden="true">M</span><span class="wordmark__text">MBA Journey <span>Memory book</span></span></a>
+      <p>Scaffold only · Personal content has not been added</p>
+      <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>

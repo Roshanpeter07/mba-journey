@@ -1,0 +1,8 @@
+.site-nav { display: flex; flex-wrap: wrap; align-items: center; gap: clamp(1rem, 2.8vw, 2.5rem); }
+.site-nav a { color: var(--color-ink-soft); font-size: 0.78rem; text-decoration: none; transition: color 160ms ease; }
+.site-nav a:hover, .site-nav a[aria-current="location"] { color: var(--color-accent); }
+
+@media (max-width: 480px) {
+  .site-nav { gap: 0.45rem 1.1rem; }
+  .site-nav a { font-size: 0.73rem; }
+}

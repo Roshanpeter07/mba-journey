@@ -1,0 +1,22 @@
+h1, h2, h3 { color: var(--color-ink); }
+
+h1, h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.045em; line-height: 0.99; }
+
+h1 { max-width: 11ch; font-size: clamp(3.5rem, 8vw, 7.5rem); }
+h2 { font-size: clamp(2.7rem, 5vw, 5rem); }
+h3 { font-family: var(--font-display); font-size: clamp(1.5rem, 2.3vw, 2rem); font-weight: 400; line-height: 1.2; }
+
+h1 em, h2 em { color: var(--color-accent); font-weight: 400; }
+
+.eyebrow, .content-status, .chat-placeholder__label, .hero__aside-caption, .hero__bottomline, .map-placeholder__note {
+  color: var(--color-muted);
+  font-size: 0.69rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.eyebrow { display: flex; align-items: center; gap: 0.8rem; }
+.eyebrow__rule { display: inline-block; width: 2.25rem; height: 1px; background: var(--color-accent); }
+.section-lede { color: var(--color-ink-soft); font-family: var(--font-display); font-size: clamp(1.4rem, 2.4vw, 2rem); line-height: 1.35; }

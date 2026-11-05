@@ -1,0 +1,5 @@
+html.js [data-reveal] { transition: opacity 650ms var(--ease-editorial), transform 650ms var(--ease-editorial); }
+
+@media (prefers-reduced-motion: no-preference) {
+  html.js [data-reveal]:not(.is-visible) { opacity: 0; transform: translateY(14px); }
+}
